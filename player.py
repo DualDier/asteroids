@@ -1,3 +1,4 @@
+import pygame
 from circleshape import CircleShape
 from constants import *
 
@@ -17,5 +18,5 @@ class Player(CircleShape):
     
     def draw(self, screen):
         # sub-classes must override
-        self.screen
+        self.screen = screen
         pygame.draw.polygon(self.screen, "white", self.triangle(), 2)
